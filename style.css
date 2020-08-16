@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	width: 1240px;
+	margin: 0 auto;
+}
+
+.hero-section, main, footer {
+	padding: 50px 0;
+}
+
+.flex-parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+h1, h2, h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+	font-family: "Poppins", sans-serif;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+p {
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+a {
+	margin: 20px 0;
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #fff;
+}
+
+.cta {
+	padding: 15px 60px;
+	margin-bottom: 0;
+	background-color: hsl(322, 100%, 66%);
+	color: #fff;
+	display: inline-block;
+	border-radius: 50px;
+	font-size: 15px;
+	font-weight: 700;
+	transition: 0.5s;
+}
+
+.cta:hover {
+	opacity: 0.8;
+}
+
+.white-cta {
+	padding: 12px 60px;
+	background-color: #fff;
+	color: #000;
+	box-shadow: 0 5px 12px #DEDEDE;
+}
+
+/* HERO HEADER CONFIGURATION */
+.hero-section {
+	background: url("images/bg-hero-desktop.svg");
+	background-color: hsl(193, 100%, 96%);
+}
+
+.hero-section header {
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+
+.content-flex {
+	width: 65%;
+	padding-right: 50px;
+}
+
+/* MAIN CONFIGURATION */
+main {
+	padding: 150px 0;
+}
+
+.card {
+	box-shadow: 0 1px 10px #DEDEDE;
+	border-radius: 10px;
+	padding: 30px;
+	padding-left: 100px;
+	margin: 50px 0;
+}
+
+.card-inverse {
+	flex-direction: row-reverse;
+}
+
+.card .content-flex {
+	padding-right: 100px;
+}
+
+.card-inverse .content-flex {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+}
+
+.card img {
+	width: 50%;
+	height: auto;
+}
+
+.text-main {
+	color: hsl(208, 11%, 55%);
+}
+
+/* FOOTER CONFIG */
+footer {
+	background-color: hsl(192, 100%, 9%);
+}
+
+.relative-footer {
+	position: relative;
+	padding: 50px;
+}
+
+.card-get-started {
+	background-color: #fff;
+	text-align: center;
+	display: inline-block;
+	box-shadow: 0 -1px 5px #DEDEDE;
+	width: 50%;
+	padding: 30px;
+	position: absolute;
+	top: -200px;
+}
+
+.card-get-started .cta {
+	box-shadow: 0 5px 12px #DEDEDE;	
+}
+
+.flex-parent-footer {
+	justify-content: center;
+}
+
+.flex-parent-footer div {
+	flex-grow: 1;
+}
