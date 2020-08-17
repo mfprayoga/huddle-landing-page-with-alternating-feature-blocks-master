@@ -65,6 +65,7 @@ a {
 
 .white-cta {
 	padding: 12px 60px;
+	margin: 0;
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0 5px 12px #DEDEDE;
@@ -129,7 +130,7 @@ footer {
 
 .relative-footer {
 	position: relative;
-	padding: 50px;
+	padding: 30px;
 }
 
 .card-get-started {
@@ -137,7 +138,6 @@ footer {
 	text-align: center;
 	display: inline-block;
 	box-shadow: 0 -1px 5px #DEDEDE;
-	width: 50%;
 	padding: 30px;
 	position: absolute;
 	top: -200px;
@@ -147,10 +147,274 @@ footer {
 	box-shadow: 0 5px 12px #DEDEDE;	
 }
 
-.flex-parent-footer {
-	justify-content: center;
+footer a:hover {
+	color: #ccc;
 }
 
-.flex-parent-footer div {
-	flex-grow: 1;
+.flex-parent-footer {
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.flex-footer-content {
+	color: #fff;
+	width: 50%;
+}
+
+.flex-footer-content img {
+	margin-right: 20px;
+}
+
+.flex-footer-social {
+	padding-top: 30px;
+}
+
+.flex-footer-social i {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	padding: 20px;
+	margin-right: 10px;
+}
+
+.attribution p {
+	color: #fff;
+	text-align: right;
+	font-size: 14px;
+	margin-right: 50px;
+	margin-bottom: 0;
+}
+
+/* RESPONSIVE MOBILE DESIGN VIEWPORT 768PX */
+@media screen and (max-width: 768px) {
+	.container {
+		width: 768px;
+		max-width: 100%;
+	}
+
+	.hero-section, main, footer {
+		padding: 50px 15px;
+	}
+
+	h1, h2, h3 {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	a {
+		font-size: 16px;
+	}
+
+	img {
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	.cta {
+		padding: 12px 40px;
+	}
+
+	.white-cta {
+		padding: 8px 20px;
+	}	
+
+	/* HERO HEADER CONFIGURATION */
+	header img {
+		width: 25%;
+		margin: 0;
+	}
+
+	.hero-section {
+		background: url("images/bg-hero-desktop.svg");
+	}
+
+	.content-flex {
+		width: 80%;
+		padding-right: 30px;
+		align-self: center;
+	}
+
+	/* MAIN CONFIGURATION */
+	main {
+		padding: 50px 15px 100px;
+	}
+
+	main .card {
+		padding: 30px;
+	}
+
+	.card .content-flex {
+		padding: 0;
+	}
+
+	.card img {
+		width: 100%;
+	}
+
+	.card-inverse .content-flex {
+		padding: 0;
+	}
+
+	/* FOOTER CONFIG */
+	.card-get-started {
+		width: 100%;
+	}
+
+	.flex-parent-footer {
+		text-align: left;
+	}
+
+	.flex-footer-content {
+		width: 50%;
+	}
+
+	.flex-footer-content img {
+		margin: 0;
+		margin-right: 20px;
+		width: 5%;
+	}
+
+	.flex-footer-social {
+		padding-top: 30px;
+	}
+
+	.attribution p {
+		text-align: center;
+		margin: 0;
+	}
+}
+
+/* RESPONSIVE MOBILE DESIGN VIEWPORT 375PX */
+@media screen and (max-width: 375px) {
+	.container {
+		width: 375px;
+		max-width: 100%;
+	}
+
+	.hero-section, main, footer {
+		padding: 50px 15px;
+		text-align: center;
+	}
+
+	.flex-parent {
+		flex-direction: column;
+	}
+
+	h1, h2, h3 {
+		font-size: 1.5em;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	a {
+		font-size: 16px;
+	}
+
+	img {
+		width: 100%;
+		margin: 30px 0;
+	}
+
+	.cta {
+		padding: 12px 40px;
+	}
+
+	.white-cta {
+		padding: 8px 20px;
+	}	
+
+	/* HERO HEADER CONFIGURATION */
+	header img {
+		width: 25%;
+		margin: 0;
+	}
+
+	.hero-section {
+		background: url("images/bg-hero-mobile.svg");
+	}
+
+	.hero-section header {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 50px;
+	}
+
+	.content-flex {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	/* MAIN CONFIGURATION */
+	main {
+		padding: 50px 15px 100px;
+	}
+
+	main .card {
+		padding: 30px;
+		flex-direction: column-reverse;
+	}
+
+	.card-inverse {
+		flex-direction: column;
+	}
+
+	.card .content-flex {
+		padding: 0;
+	}
+
+	.card img {
+		width: 100%;
+	}
+
+	.card-inverse .content-flex {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* FOOTER CONFIG */
+	.card-get-started {
+		width: 100%;
+	}
+
+	.flex-parent-footer {
+		text-align: left;
+	}
+
+	.flex-footer-content {
+		width: 100%;
+		display: inline;
+		align-content: center;
+	}
+
+	.flex-footer-content img {
+		margin: 0;
+		margin-right: 20px;
+		width: 5%;
+	}
+
+	.flex-footer-social {
+		padding-top: 30px;
+		align-self: center;
+	}
+
+	.attribution {
+		margin-top: 50px;
+	}
+
+	.attribution p {
+		text-align: center;
+		margin: 0;
+	}
 }
